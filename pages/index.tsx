@@ -1,8 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-
-import ReactSvg from '../assets/react.svg'
-
+import Image from 'next/image'
 import { Container } from '../styles/pages/Home'
 
 const Home: React.FC = () => {
@@ -11,8 +9,7 @@ const Home: React.FC = () => {
       <Head>
         <title>Homepage</title>
       </Head>
-
-      <ReactSvg />
+      <Image src="/logo.png" width={250} height={250} />
       <h1>ReactJS Structure</h1>
       <p>A ReactJS + Next.js structure made for you.</p>
     </Container>
